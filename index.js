@@ -29,7 +29,7 @@ let input = document.querySelector('.search-dormant'),
 
         return m.pageX >= right || m.pageY >= bottom
     }
-    
+
     //Search-input event listener
     search.addEventListener('click',()=>{
         input.classList.toggle('search-active')
@@ -55,9 +55,7 @@ let input = document.querySelector('.search-dormant'),
             } else{
                 let exit = document.querySelector('.exit')
                 exit.addEventListener('click',() => {
-                setTimeout(() => {
                     side_menu.classList.remove('side-active');
-                },150)
                 })
             }
             if(statement1 && outsideOfSearch(search,input,e)){
